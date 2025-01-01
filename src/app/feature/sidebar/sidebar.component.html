@@ -1,0 +1,19 @@
+<div class="sidebar">
+    <app-search-bar (search)="onSearch($event)"></app-search-bar>
+
+    <mat-nav-list>
+      <mat-list-item
+        *ngFor="let video of filteredVideos"
+        (click)="selectVideo(video)"
+        [ngClass]="{ 'selected-video': currentVideo?.id === video.id }"
+      >
+        <!-- Play/Pause Icons -->
+        <button mat-icon-button (click)="togglePlayPause(video, $event)">
+          <mat-icon>
+            {{ isPlaying(video) ? 'pause_circle' : 'play_circle' }}
+          </mat-icon>
+        </button>
+        <span class="video-item-title">{{ video.title }}</span>
+      </mat-list-item>
+    </mat-nav-list>
+  </div>
