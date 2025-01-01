@@ -2,6 +2,9 @@
 
 This project is an Angular Video Player Application built with Angular, NgRx, Video.js, and Angular Material. The application allows users to browse and play videos from a dynamically loaded list, with features like video selection, search, and a responsive UI. The app also leverages state management using NgRx and stores the last played video in localStorage to resume playback after reopening.
 
+![image](https://github.com/user-attachments/assets/bc0550e2-9009-41e6-a578-c0701ed0b640)
+
+
 # Technologies Used:
 
 Angular (latest version 18)
